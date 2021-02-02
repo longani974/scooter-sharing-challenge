@@ -1,0 +1,19 @@
+.btn {
+  background-color: var(--Yellow);
+  color: var(--White);
+  width: 180px;
+  height: 53px;
+  font-family: Space Mono;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  outline: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  border: 3px solid var(--Yellow);
+  color: var(--Yellow);
+  background-color: var(--White);
+  cursor: pointer;
+}

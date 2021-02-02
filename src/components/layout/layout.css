@@ -1,3 +1,13 @@
+:root {
+  --Yellow: rgb(252, 183, 43, 1);
+  --Dark-Navy: rgb(73, 85, 103, 1);
+  --Dim-Grey: rgb(147, 156, 170, 1);
+  --Light-Grey: rgb(229, 236, 244, 1);
+  --Snow: rgb(242, 245, 249, 1);
+  --Light-Yellow: rgb(255, 244, 223, 1);
+  --White: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
