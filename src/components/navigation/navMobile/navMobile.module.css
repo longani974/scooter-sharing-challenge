@@ -3,6 +3,16 @@
   width: 100vw;
   top: var(--NavHeight);
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.795);
+  background-color: var(--overScreenNavMobile);
   transition: right 0.3s;
+}
+
+.navWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--bgNavMobile);
+  width: fit-content;
+  height: 100%;
+  padding: 64px 32px 24px 32px;
 }

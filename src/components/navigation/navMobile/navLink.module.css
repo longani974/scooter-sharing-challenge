@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nav a {
+  font-family: "Space Mono";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--Light-Grey);
+  text-decoration: none;
+}
