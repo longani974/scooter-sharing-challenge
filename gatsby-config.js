@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Scoot`,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

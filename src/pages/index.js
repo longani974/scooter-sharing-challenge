@@ -7,7 +7,9 @@ export default function Home() {
     <Layout>
       <h1>Parksa</h1>
       <div>Hello world!</div>
-      <Button action={() => console.log("boom")}>Button</Button>
+      <Button to="/about/" action={() => console.log("boom")}>
+        Button
+      </Button>
     </Layout>
   )
 }

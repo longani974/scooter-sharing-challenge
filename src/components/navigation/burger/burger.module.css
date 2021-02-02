@@ -1,0 +1,42 @@
+.wrapper {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.wrapper div {
+  width: 18px;
+  height: 3.69px;
+  background: var(--Yellow);
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.middle {
+  top: 0;
+}
+
+.top {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom {
+  bottom: 0px;
+}
+
+.topOpen {
+  transform: translateY(-2.5px) rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.middleOpen {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.bottomOpen {
+  transform: translateY(-7px) rotate(-45deg);
+  transition: all 0.3s ease;
+}

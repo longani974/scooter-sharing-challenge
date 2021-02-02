@@ -23,3 +23,21 @@ h5,
 h6 {
   font-family: "Space Mono";
 }
+
+header {
+  position: relative;
+  background: var(--White);
+  width: 100vw;
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+}
