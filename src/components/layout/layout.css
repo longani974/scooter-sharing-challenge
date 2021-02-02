@@ -6,6 +6,8 @@
   --Snow: rgb(242, 245, 249, 1);
   --Light-Yellow: rgb(255, 244, 223, 1);
   --White: #fff;
+
+  --NavHeight: 64px;
 }
 
 * {
@@ -28,8 +30,7 @@ header {
   position: relative;
   background: var(--White);
   width: 100vw;
-  height: 64px;
-  background-color: #fff;
+  height: var(--NavHeight);
   display: flex;
   justify-content: center;
   align-items: center;

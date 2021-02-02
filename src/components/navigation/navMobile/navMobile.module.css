@@ -1,0 +1,8 @@
+.navMobile {
+  position: absolute;
+  width: 100vw;
+  top: var(--NavHeight);
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.795);
+  transition: right 0.3s;
+}
