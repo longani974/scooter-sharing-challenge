@@ -4,12 +4,12 @@ import Button from "../components/ui/button"
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <h1>Parksa</h1>
       <div>Hello world!</div>
       <Button to="/about/" action={() => console.log("boom")}>
         Button
       </Button>
-    </Layout>
+    </>
   )
 }

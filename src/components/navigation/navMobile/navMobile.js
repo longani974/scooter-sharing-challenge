@@ -17,7 +17,7 @@ const NavMobile = props => {
     >
       <div className={styles.navWrapper}>
         <NavLink></NavLink>
-        <Button>Get Scootin</Button>
+        <Button to={"#"}>Get Scootin</Button>
       </div>
     </div>
   )
