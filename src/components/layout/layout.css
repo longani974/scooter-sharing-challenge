@@ -49,6 +49,10 @@ header {
   transform: translateY(-50%);
 }
 
+.logoHero img {
+  width: 75.5px;
+}
+
 .navTablet {
   display: none;
 }
@@ -71,6 +75,16 @@ header {
 
   header {
     justify-content: space-between;
-    gap: 32px;
+    gap: 58.18px;
+  }
+
+  .logoHero img {
+    width: 107.82px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  :root {
+    --SideGap: 165px;
   }
 }
