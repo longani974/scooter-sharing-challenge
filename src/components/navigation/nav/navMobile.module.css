@@ -1,6 +1,6 @@
 .nav {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   top: var(--NavHeight);
   bottom: 0;
   background-color: var(--overScreenNavMobile);
@@ -20,15 +20,14 @@
 @media screen and (min-width: 768px) {
   .nav {
     position: unset;
-    width: unset;
     background-color: transparent;
   }
 
   .navWrapper {
+    width: 100%;
     flex-direction: row;
     padding: 0;
     height: unset;
     background: transparent;
-    gap: 94px;
   }
 }

@@ -66,9 +66,11 @@ header {
 
   .navTablet {
     display: block;
+    width: 100%;
   }
 
   header {
     justify-content: space-between;
+    gap: 32px;
   }
 }
