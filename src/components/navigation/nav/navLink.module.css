@@ -12,3 +12,16 @@
   color: var(--Light-Grey);
   text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .nav a {
+    color: var(--Dim-Grey);
+    font-size: 15px;
+  }
+}

@@ -1,4 +1,4 @@
-.navMobile {
+.nav {
   position: absolute;
   width: 100vw;
   top: var(--NavHeight);
@@ -15,4 +15,20 @@
   width: fit-content;
   height: 100%;
   padding: 64px 32px 24px 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    position: unset;
+    width: unset;
+    background-color: transparent;
+  }
+
+  .navWrapper {
+    flex-direction: row;
+    padding: 0;
+    height: unset;
+    background: transparent;
+    gap: 94px;
+  }
 }

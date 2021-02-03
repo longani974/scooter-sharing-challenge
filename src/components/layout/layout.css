@@ -10,6 +10,9 @@
   --overScreenNavMobile: rgba(0, 0, 0, 0.795);
 
   --NavHeight: 64px;
+
+  --TabletBP: 768px;
+  --SideGap: 0px;
 }
 
 * {
@@ -36,6 +39,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 var(--SideGap);
 }
 
 .burger {
@@ -43,4 +47,27 @@ header {
   top: 50%;
   left: 32px;
   transform: translateY(-50%);
+}
+
+.navTablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --SideGap: 40px;
+  }
+
+  .burger,
+  .navMobile {
+    display: none;
+  }
+
+  .navTablet {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+  }
 }

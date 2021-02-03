@@ -6,7 +6,6 @@ import * as styles from "./navLink.module.css"
 const NavLink = () => {
   return (
     <nav className={styles.nav}>
-      <Link to={"/"}>Home</Link>
       <Link to={"/about/"}>About</Link>
       <Link to={"/location/"}>Location</Link>
       <Link to={"/careers/"}>Careers</Link>

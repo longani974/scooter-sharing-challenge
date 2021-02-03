@@ -4,7 +4,7 @@ import NavLink from "./navLink"
 
 import * as styles from "./navMobile.module.css"
 
-const NavMobile = props => {
+const Nav = props => {
   let right = 100
   if (props.open) {
     right = 0
@@ -12,7 +12,7 @@ const NavMobile = props => {
   return (
     <div
       onClick={props.openHandler}
-      className={styles.navMobile}
+      className={styles.nav}
       style={{ right: `${right}vw` }}
     >
       <div className={styles.navWrapper}>
@@ -23,4 +23,4 @@ const NavMobile = props => {
   )
 }
 
-export default NavMobile
+export default Nav

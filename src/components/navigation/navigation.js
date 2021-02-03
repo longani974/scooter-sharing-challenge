@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Burger from "./burger/burger"
 import Logo from "./logo/logo"
-import NavMobile from "./navMobile/navMobile"
+import Nav from "./nav/nav"
 
 const Navigation = () => {
   const [open, setOpen] = useState(false)
@@ -14,9 +14,14 @@ const Navigation = () => {
     <>
       <header>
         <Burger openHandler={openHandler} open={open}></Burger>
-        <Logo></Logo>
+        <Logo openHandler={openHandler} open={open} />{" "}
+        <span className="navTablet">
+          <Nav openHandler={openHandler} open={open}></Nav>
+        </span>
       </header>
-      <NavMobile openHandler={openHandler} open={open}></NavMobile>
+      <span className="navMobile">
+        <Nav openHandler={openHandler} open={open}></Nav>
+      </span>
     </>
   )
 }

@@ -1,10 +1,17 @@
+import { Link } from "gatsby"
 import React from "react"
 import LogoImg from "../../../assets/logo.svg"
 
-const Logo = () => {
+const Logo = props => {
+  const retractNav = () => {
+    if (props.open) props.openHandler()
+    return
+  }
   return (
-    <div className="logoHero">
-      <img src={LogoImg} alt="logo"></img>
+    <div onClick={retractNav} className="logoHero">
+      <Link to={"/"}>
+        <img src={LogoImg} alt="logo"></img>
+      </Link>
     </div>
   )
 }

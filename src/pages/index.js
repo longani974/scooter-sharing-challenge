@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout/layout"
 import Button from "../components/ui/button"
 
 export default function Home() {
