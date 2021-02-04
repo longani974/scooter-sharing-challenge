@@ -31,7 +31,7 @@ h6 {
   font-family: "Space Mono";
 }
 
-header {
+.sectionNav {
   position: relative;
   background: var(--White);
   width: 100vw;
@@ -73,7 +73,7 @@ header {
     width: 100%;
   }
 
-  header {
+  .sectionNav {
     justify-content: space-between;
     gap: 58.18px;
   }

@@ -5,6 +5,7 @@
   bottom: 0;
   background-color: var(--overScreenNavMobile);
   transition: right 0.3s;
+  z-index: 1000;
 }
 
 .navWrapper {

@@ -12,13 +12,13 @@ const Navigation = () => {
 
   return (
     <>
-      <header>
+      <section className="sectionNav">
         <Burger openHandler={openHandler} open={open}></Burger>
         <Logo openHandler={openHandler} open={open} />{" "}
         <span className="navTablet">
           <Nav openHandler={openHandler} open={open}></Nav>
         </span>
-      </header>
+      </section>
       <span className="navMobile">
         <Nav openHandler={openHandler} open={open}></Nav>
       </span>

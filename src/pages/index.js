@@ -1,14 +1,11 @@
 import React from "react"
-import Button from "../components/ui/button"
+import Header from "../components/Header/header"
 
 export default function Home() {
+  const title = "Home"
   return (
     <>
-      <h1>Parksa</h1>
-      <div>Hello world!</div>
-      <Button to="/about/" action={() => console.log("boom")}>
-        Button
-      </Button>
+      <Header title={title} />
     </>
   )
 }

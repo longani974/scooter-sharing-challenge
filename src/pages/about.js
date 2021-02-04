@@ -1,7 +1,13 @@
 import React from "react"
+import Header from "../components/Header/header"
 
 function About() {
-  return <h1>About</h1>
+  const title = "About"
+  return (
+    <>
+      <Header title={title} />
+    </>
+  )
 }
 
 export default About

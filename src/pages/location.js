@@ -1,7 +1,13 @@
 import React from "react"
+import Header from "../components/Header/header"
 
 function Location() {
-  return <h1>Location</h1>
+  const title = "Location"
+  return (
+    <>
+      <Header title={title} />
+    </>
+  )
 }
 
 export default Location

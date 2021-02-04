@@ -1,0 +1,17 @@
+.header {
+  width: 100vw;
+  /* background: tomato; */
+  text-align: center;
+}
+
+.header h1 {
+  padding: var(--spacingAround);
+  color: #fff;
+}
+
+.backImg {
+  width: 100%;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
