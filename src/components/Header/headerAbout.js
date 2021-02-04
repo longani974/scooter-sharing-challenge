@@ -6,13 +6,11 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import * as styles from "./header.module.css"
 
-const Header = props => {
+const HeaderAbout = props => {
   const data = useStaticQuery(
     graphql`
       query {
-        image: file(
-          relativePath: { eq: "images/careers-location-hero-mobile.jpg" }
-        ) {
+        image: file(relativePath: { eq: "images/about-hero-mobile.jpg" }) {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid_withWebp
@@ -27,11 +25,14 @@ const Header = props => {
 
   return (
     <BackgroundImage Tag="section" className={"backImg"} fluid={imageData}>
-      <header className={styles.header} style={{ "--spacingAround": "60px 0" }}>
+      <header
+        className={styles.header}
+        style={{ "--spacingAround": "60px 32px" }}
+      >
         <h1>{props.title}</h1>
       </header>
     </BackgroundImage>
   )
 }
 
-export default Header
+export default HeaderAbout

@@ -1,10 +1,8 @@
 .header {
+  position: relative;
   width: 100vw;
   /* background: tomato; */
   text-align: center;
-}
-
-.header h1 {
   padding: var(--spacingAround);
   color: #fff;
 }
@@ -14,4 +12,20 @@
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
+}
+
+.header h1 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -1.78571px;
+}
+
+.header p {
+  margin: 24px 0 34px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 45px;
+  right: 240.62px;
 }

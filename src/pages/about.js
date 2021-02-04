@@ -1,11 +1,11 @@
 import React from "react"
-import Header from "../components/Header/header"
+import HeaderAbout from "../components/Header/headerAbout"
 
 function About() {
   const title = "About"
   return (
     <>
-      <Header title={title} />
+      <HeaderAbout title={title} />
     </>
   )
 }
