@@ -5,7 +5,7 @@ function Careers() {
   const title = "Careers"
   return (
     <>
-      <Header imgSrc="images/careers-locations-hero-mobile.jpg" title={title} />
+      <Header imgSrc="images/careers-location-hero-mobile.jpg" title={title} />
     </>
   )
 }

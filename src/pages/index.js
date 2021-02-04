@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <HeaderHome
         imgSrc="images/home-hero-mobile.jpg"
-        withContent
+        isWithContent
         title={title}
         content={content}
       />
