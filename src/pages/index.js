@@ -1,5 +1,5 @@
 import React from "react"
-import HeaderHome from "../components/Header/headerHome"
+import HeaderHome from "../components/Header/header"
 import Button from "../components/ui/button"
 
 export default function Home() {
@@ -16,7 +16,12 @@ export default function Home() {
   )
   return (
     <>
-      <HeaderHome withContent title={title} content={content} />
+      <HeaderHome
+        imgSrc="images/home-hero-mobile.jpg"
+        withContent
+        title={title}
+        content={content}
+      />
     </>
   )
 }

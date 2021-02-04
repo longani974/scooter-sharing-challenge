@@ -5,10 +5,7 @@ function Location() {
   const title = "Location"
   return (
     <>
-      <Header
-        bgImgPath="images/careers-locations-hero-mobile.jpg"
-        title={title}
-      />
+      <Header imgSrc="images/careers-locations-hero-mobile.jpg" title={title} />
     </>
   )
 }

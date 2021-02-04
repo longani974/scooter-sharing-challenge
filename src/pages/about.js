@@ -1,11 +1,11 @@
 import React from "react"
-import HeaderAbout from "../components/Header/headerAbout"
+import Header from "../components/Header/header"
 
 function About() {
   const title = "About"
   return (
     <>
-      <HeaderAbout title={title} />
+      <Header imgSrc="images/about-hero-mobile.jpg" title={title} />
     </>
   )
 }
