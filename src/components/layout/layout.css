@@ -22,6 +22,11 @@
   font-family: "Lexend Deca";
 }
 
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 h1,
 h2,
 h3,
@@ -39,7 +44,7 @@ p {
 .sectionNav {
   position: relative;
   background: var(--White);
-  width: 100vw;
+  width: 100%;
   height: var(--NavHeight);
   display: flex;
   justify-content: center;
@@ -59,6 +64,10 @@ p {
 }
 
 .navTablet {
+  display: none;
+}
+
+.line {
   display: none;
 }
 

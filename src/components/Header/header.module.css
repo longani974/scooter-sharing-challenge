@@ -1,9 +1,10 @@
 .header {
   position: relative;
-  width: 100vw;
+  width: 100%;
   /* background: tomato; */
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 
 .withContent {
@@ -39,6 +40,10 @@
   position: absolute;
   bottom: 45px;
   left: -320px;
+}
+
+.line {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -79,5 +84,44 @@
   .arrow {
     bottom: 39px;
     left: -127px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .header div {
+    width: 500px;
+  }
+
+  .header div div {
+    padding-left: 95px;
+  }
+
+  .withContent {
+    padding: 153px 0px 152px 165px;
+    text-align: left;
+  }
+
+  .noContent {
+    padding: 72px 165px;
+  }
+
+  .withContent .whiteCirlces {
+    bottom: 164.5px;
+  }
+
+  .header p {
+    margin: 40px 0 40px;
+  }
+
+  .arrow {
+    bottom: 157px;
+    left: 705px;
+  }
+
+  .line {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 293px;
   }
 }
