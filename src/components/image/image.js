@@ -53,7 +53,7 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   let sourceArr = []
   const source = () => {
     const arrSource = []
-    const medias = customMedias ? customMedias : [0, 400, 768]
+    const medias = customMedias ? customMedias : [0, 400, 769]
     const unitMedia = unit ? unit : "px"
     if (customMedias && customMedias.length !== srcArr.length)
       console.error(
