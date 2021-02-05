@@ -17,7 +17,11 @@ export default function Home() {
   return (
     <>
       <HeaderHome
-        imgSrc="images/home-hero-mobile.jpg"
+        imgSrc={{
+          mobile: "images/home-hero-mobile.jpg",
+          tablet: "images/home-hero-tablet.jpg",
+          dasktop: "images/home-hero-desktop.jpg",
+        }}
         isWithContent
         title={title}
         content={content}
