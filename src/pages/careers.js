@@ -5,7 +5,14 @@ function Careers() {
   const title = "Careers"
   return (
     <>
-      <Header imgSrc="images/careers-location-hero-mobile.jpg" title={title} />
+      <Header
+        imgSrc={{
+          mobile: "images/careers-location-hero-mobile.jpg",
+          tablet: "images/careers-locations-hero-tablet.jpg",
+          desktop: "images/careers-locations-hero-desktop.jpg",
+        }}
+        title={title}
+      />
     </>
   )
 }

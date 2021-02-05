@@ -29,15 +29,14 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   // ???   Do I need useMemo for match and source  ???
   // ???                                           ???
   // ?????????????????????????????????????????????????
-  const srcArr = []
   let srcData
   if (Object.prototype.toString.call(src) === "[object Object]") {
     srcData = src
   } else srcData = { src }
-  console.log("src data = " + srcData)
+
+  const srcArr = []
   const match = () => {
     Object.entries(srcData).forEach((value, key) => {
-      console.log(value)
       data.images.edges.find(({ node }) => {
         if (value[1] === node.relativePath) {
           srcArr.push([node])
@@ -50,15 +49,12 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
     })
   }
   match()
-  console.log(srcArr)
 
   let sourceArr = []
   const source = () => {
-    console.log(srcArr[0])
     const arrSource = []
     const medias = customMedias ? customMedias : [0, 400, 768]
     const unitMedia = unit ? unit : "px"
-    console.log(medias, unitMedia)
     if (customMedias && customMedias.length !== srcArr.length)
       console.error(
         `Problem with number of customs medias and the number of images.}`
@@ -70,11 +66,10 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
           media: `(min-width: ${medias[i]}${unitMedia})`,
         })
     }
-    console.log(arrSource)
     return (sourceArr = [...arrSource])
   }
   source()
-  // console.log(sourceArr)
+
   let imageToDisplay
 
   isBgImage

@@ -5,7 +5,14 @@ function About() {
   const title = "About"
   return (
     <>
-      <Header imgSrc="images/about-hero-mobile.jpg" title={title} />
+      <Header
+        imgSrc={{
+          mobile: "images/about-hero-mobile.jpg",
+          tablet: "images/about-hero-tablet.jpg",
+          desktop: "images/about-hero-desktop.jpg",
+        }}
+        title={title}
+      />
     </>
   )
 }
