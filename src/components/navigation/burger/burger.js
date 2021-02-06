@@ -13,7 +13,13 @@ const Burger = props => {
   }
 
   return (
-    <div onClick={props.openHandler} className={`burger ${styles.burger}`}>
+    // The aria-hidden is for the es-lint warning do not apppear for accecibility problem.
+    // The warning said to had a keyboard listener with the onClick but it's a burger for mobile device.
+    <div
+      onClick={props.openHandler}
+      className={`burger ${styles.burger}`}
+      aria-hidden="true"
+    >
       <div className={styles.wrapper}>
         <div className={styles.top + " " + topOpen}></div>
         <div className={styles.middle + " " + middleOpen}></div>

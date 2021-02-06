@@ -37,14 +37,14 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   const srcArr = []
   const match = () => {
     Object.entries(srcData).forEach((value, key) => {
-      data.images.edges.find(({ node }) => {
+      data.images.edges.forEach(({ node }) => {
         if (value[1] === node.relativePath) {
           srcArr.push([node])
         }
       })
       if (!srcArr[key]) {
-        srcArr.push(null)
         console.error(`Image not found at ${value[1]}`)
+        srcArr.push(null)
       }
     })
   }

@@ -8,7 +8,14 @@ const Logo = props => {
     return
   }
   return (
-    <div onClick={retractNav} className="logoHero">
+    // role, onKeyPress and tabIndex are for accacibility warning
+    <div
+      onClick={retractNav}
+      onKeyPress={retractNav}
+      className="logoHero"
+      role="menuitem"
+      tabIndex="0"
+    >
       <Link to={"/"}>
         <img src={LogoImg} alt="logo"></img>
       </Link>

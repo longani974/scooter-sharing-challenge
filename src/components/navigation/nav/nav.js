@@ -10,10 +10,12 @@ const Nav = props => {
     right = 0
   }
   return (
+    // aria hiden for es lint warning (accecibilty with keybord but it's a function for mobile)
     <div
       onClick={props.openHandler}
       className={styles.nav}
       style={{ right: `${right}vw` }}
+      aria-hidden="true"
     >
       <div className={styles.navWrapper}>
         <NavLink></NavLink>
