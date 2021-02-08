@@ -34,6 +34,7 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
     srcData = src
   } else srcData = { src }
 
+  let isSvg = false
   const srcArr = []
   const match = () => {
     Object.entries(srcData).forEach((value, key) => {
@@ -49,7 +50,6 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
     })
   }
   match()
-
   let sourceArr = []
   const source = () => {
     const arrSource = []
@@ -61,9 +61,9 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
       )
     for (let i = 0; i < srcArr.length; i++) {
       if (srcArr[i]) {
-        if (srcArr[i][0].extension === "png") {
-          console.warn("you tried to pass a png in the Image component")
-          arrSource.push(<img src={srcArr[i][0].relativePath} alt="" />)
+        if (srcArr[i][0].extension === "svg") {
+          isSvg = true
+          arrSource.push(<img src={srcArr[i][0].publicURL} {...rest} alt="" />)
         } else {
           arrSource.push({
             ...srcArr[i][0].childImageSharp.fluid,
@@ -76,15 +76,18 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   }
   source()
 
-  let imageToDisplay
-
-  isBgImage
-    ? (imageToDisplay = (
-        <BackgroundImage fluid={sourceArr} {...rest}>
-          {children}
-        </BackgroundImage>
-      ))
-    : (imageToDisplay = <Img fluid={sourceArr} {...rest} />)
+  let imageToDisplay = <></>
+  if (!isSvg && sourceArr[0]) {
+    isBgImage
+      ? (imageToDisplay = (
+          <BackgroundImage fluid={sourceArr} {...rest}>
+            {children}
+          </BackgroundImage>
+        ))
+      : (imageToDisplay = <Img fluid={sourceArr} {...rest} />)
+  } else if (sourceArr[0]) {
+    imageToDisplay = sourceArr[0]
+  }
 
   return imageToDisplay
 }

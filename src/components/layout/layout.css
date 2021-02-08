@@ -13,6 +13,7 @@
 
   --TabletBP: 768px;
   --SideGap: 0px;
+  --paddingLeftRigth: 32px;
 }
 
 * {

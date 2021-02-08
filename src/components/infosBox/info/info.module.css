@@ -1,0 +1,19 @@
+.info {
+  text-align: center;
+}
+
+.info img {
+  width: 56px;
+}
+
+.info h2 {
+  margin: 24px 0;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.892857px;
+  color: var(--Dark-Navy);
+}
+
+.info p {
+  color: var(--Dim-Grey);
+}
