@@ -6,3 +6,24 @@
   flex-direction: column;
   gap: 48px;
 }
+
+.line {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .infoBox {
+    position: relative;
+    margin-top: 122px;
+  }
+
+  .line {
+    position: absolute;
+    display: block;
+    border: 7.5px solid var(--Light-Grey);
+    height: 512px;
+    top: -122px;
+    left: calc(var(--paddingLeftRigth) + 41px);
+    z-index: -1;
+  }
+}

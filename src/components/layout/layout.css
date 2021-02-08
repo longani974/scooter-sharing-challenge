@@ -76,6 +76,7 @@ p {
   :root {
     --NavHeight: 96px;
     --SideGap: 40px;
+    --paddingLeftRigth: 96px;
   }
 
   .burger,

@@ -15,7 +15,12 @@ const InfosBox = () => {
       />
     )
   }
-  return <div className={styles.infoBox}>{infos.map(info => info)}</div>
+  return (
+    <div className={styles.infoBox}>
+      <div className={styles.line}></div>
+      {infos.map(info => info)}
+    </div>
+  )
 }
 
 export default InfosBox
