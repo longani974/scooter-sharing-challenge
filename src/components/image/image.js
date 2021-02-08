@@ -60,11 +60,17 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
         `Problem with number of customs medias and the number of images.}`
       )
     for (let i = 0; i < srcArr.length; i++) {
-      if (srcArr[i])
-        arrSource.push({
-          ...srcArr[i][0].childImageSharp.fluid,
-          media: `(min-width: ${medias[i]}${unitMedia})`,
-        })
+      if (srcArr[i]) {
+        if (srcArr[i][0].extension === "png") {
+          console.warn("you tried to pass a png in the Image component")
+          arrSource.push(<img src={srcArr[i][0].relativePath} alt="" />)
+        } else {
+          arrSource.push({
+            ...srcArr[i][0].childImageSharp.fluid,
+            media: `(min-width: ${medias[i]}${unitMedia})`,
+          })
+        }
+      }
     }
     return (sourceArr = [...arrSource])
   }
