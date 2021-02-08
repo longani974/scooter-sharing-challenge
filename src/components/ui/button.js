@@ -5,7 +5,7 @@ import * as styles from "./button.module.css"
 
 function Button(props) {
   return (
-    <Link to={props.to ? props.to : null}>
+    <Link to={props.to ? props.to : "#"}>
       <button onClick={props.action} className={styles.btn}>
         {props.children}
       </button>
