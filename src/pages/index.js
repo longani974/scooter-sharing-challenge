@@ -1,5 +1,6 @@
 import React from "react"
 import HeaderHome from "../components/Header/header"
+import Cards from "../components/index/cards/cards"
 import InfosBox from "../components/infosBox/infosBox"
 import Button from "../components/ui/button"
 
@@ -28,6 +29,7 @@ export default function Home() {
         content={content}
       />
       <InfosBox />
+      <Cards />
     </>
   )
 }

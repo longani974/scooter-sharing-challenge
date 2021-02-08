@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.card img {
+  border-radius: 50%;
+}
+
+.card h2 {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.42857px;
+  color: var(--Dark-Navy);
+  margin-bottom: 32px;
+}
+
+.card button {
+  margin-top: 32px;
+}
+
+.card p {
+  color: var(--Dim-Grey);
+}
