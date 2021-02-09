@@ -13,6 +13,7 @@ const Cards = () => {
         content={data[i].content}
         btnTxt={data[i].btnTxt}
         reverse
+        arrow={data[i].arrow}
         key={Math.random()}
       />
     )
