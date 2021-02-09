@@ -4,7 +4,7 @@ import SignUp from "../signUp/signUp"
 import * as styles from "./footer.module.css"
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <SignUp />
       <FootNav />
     </footer>
