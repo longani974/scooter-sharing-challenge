@@ -1,0 +1,77 @@
+.signUp {
+  width: 100vw;
+  position: relative;
+  background: var(--Dark-Navy);
+  color: #fff;
+  padding: 88px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.signUp h2 {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.42857px;
+}
+
+.signUp .store {
+  display: flex;
+  gap: 12.86px;
+}
+
+.icon {
+  height: 40px;
+}
+
+.bgCircles {
+  position: absolute;
+  bottom: -173.5px;
+  right: -173.5px;
+  display: flex;
+  gap: 56px;
+}
+
+.bgCircles div {
+  width: 347px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.bgCircles div:nth-child(1) {
+  border: solid 15px rgba(255, 255, 255, 0.1);
+}
+.bgCircles div:nth-child(2) {
+  border: solid 15px rgba(255, 255, 255, 0.1);
+}
+.bgCircles div:nth-child(3) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .signUp {
+    padding: 62px 156px;
+  }
+
+  .signUp h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .signUp {
+    padding: 102px var(--paddingLeftRigth);
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    text-align: left;
+  }
+  .signUp h2 {
+    max-width: 415px;
+  }
+}
