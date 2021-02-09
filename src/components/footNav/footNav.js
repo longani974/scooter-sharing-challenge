@@ -18,9 +18,15 @@ const FootNav = () => {
         <Link to={"/careers/"}>Careers</Link>
       </div>
       <div className={styles.icons}>
-        <Image src="icons/facebook.svg" alt="" />
-        <Image src="icons/twitter.svg" alt="" />
-        <Image src="icons/instagram.svg" alt="" />
+        <a href="https://www.facebook.com">
+          <Image src="icons/facebook.svg" alt="" />
+        </a>
+        <a href="https://www.twitter.com">
+          <Image src="icons/twitter.svg" alt="" />
+        </a>
+        <a href="https://www.instagram.com">
+          <Image src="icons/instagram.svg" alt="" />
+        </a>
       </div>
     </div>
   )
