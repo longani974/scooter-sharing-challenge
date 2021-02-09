@@ -1,0 +1,32 @@
+.footNav {
+  background: #333a44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0 88px;
+}
+
+.logo path {
+  fill: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  margin: 41.44px 0 85px;
+}
+
+.nav a {
+  font-family: "Space Mono";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--Dim-Grey);
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 24px;
+}
