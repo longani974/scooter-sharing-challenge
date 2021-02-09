@@ -38,11 +38,20 @@ const Card = props => {
       console.error(`wrong position of the arrow on ${props.imgSrc}`)
       break
   }
+
+  const bgCircle = !props.reverse
+    ? styles.bgCircleReverse
+    : styles.bgCircleNormal
+
+  const rowSide = !props.reverse ? "row" : "row-reverse"
   return (
-    <div className={styles.card}>
+    <div style={{ "--rowSide": `${rowSide}` }} className={styles.card}>
+      <div className={bgCircle}></div>
       <div className={styles.imgWrapper}>
         {arrow}
-        <Image src={props.srcImg} className={styles.img} />
+        <div>
+          <Image src={props.srcImg} className={styles.img} />
+        </div>
       </div>
       <div>
         <h2>{props.title}</h2>

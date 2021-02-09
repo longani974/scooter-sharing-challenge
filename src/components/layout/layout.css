@@ -102,5 +102,6 @@ p {
 @media screen and (min-width: 1365px) {
   :root {
     --SideGap: 165px;
+    --paddingLeftRigth: 165px;
   }
 }

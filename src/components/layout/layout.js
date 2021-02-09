@@ -8,7 +8,7 @@ import Navigation from "../navigation/navigation"
 
 function Layout({ children }) {
   return (
-    <div>
+    <div className="Wrapper">
       <Navigation />
       {children}
     </div>

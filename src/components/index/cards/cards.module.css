@@ -1,9 +1,10 @@
 .cards {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 120px;
   padding: 0 var(--paddingLeftRigth);
   margin-top: 120px;
   text-align: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }

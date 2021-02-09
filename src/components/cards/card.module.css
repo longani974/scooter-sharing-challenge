@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   gap: 56px;
+  text-align: center;
 }
 
 .card .img {
+  margin: auto;
+  max-width: 445px;
   border-radius: 50%;
+  position: relative;
+  display: block;
 }
 
 .card h2 {
@@ -54,4 +59,94 @@
 }
 .f {
   top: 180.5px;
+}
+
+.bgCircleNormal {
+  position: absolute;
+  width: 445px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--Light-Grey);
+  right: -350px;
+}
+
+.bgCircleReverse {
+  position: absolute;
+  width: 445px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--Light-Grey);
+  left: -350px;
+}
+
+@media screen and (min-width: 768px) {
+  .card h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    margin-bottom: 56px;
+  }
+
+  .card button {
+    margin-top: 40px;
+  }
+
+  .b {
+    top: 133px;
+    left: 0;
+  }
+  .c {
+    top: 75px;
+    left: 310px;
+  }
+  .d {
+    top: -7.5px;
+    right: 0;
+  }
+  .e {
+    top: -7.5px;
+    left: -195px;
+  }
+  .f {
+    top: 180.5px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .card {
+    flex-direction: var(--rowSide);
+    gap: 220px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .card .img {
+    width: 445px;
+  }
+
+  .card h2 {
+    margin-bottom: 24px;
+  }
+  .a {
+    right: -165px;
+  }
+  .b {
+    top: 133px;
+    left: 0;
+  }
+  .c {
+    top: 75px;
+    left: 250px;
+  }
+  .d {
+    top: -7.5px;
+    right: 0;
+  }
+  .e {
+    top: -7.5px;
+    left: -250px;
+  }
+  .f {
+    top: 180.5px;
+  }
 }
