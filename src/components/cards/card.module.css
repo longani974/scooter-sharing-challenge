@@ -62,21 +62,11 @@
 }
 
 .bgCircleNormal {
-  position: absolute;
-  width: 445px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background: var(--Light-Grey);
-  right: -350px;
+  display: none;
 }
 
 .bgCircleReverse {
-  position: absolute;
-  width: 445px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  background: var(--Light-Grey);
-  left: -350px;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -89,6 +79,26 @@
 
   .card button {
     margin-top: 40px;
+  }
+
+  .bgCircleNormal {
+    display: block;
+    position: absolute;
+    width: 445px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--Light-Grey);
+    right: -350px;
+  }
+
+  .bgCircleReverse {
+    display: block;
+    position: absolute;
+    width: 445px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: var(--Light-Grey);
+    left: -350px;
   }
 
   .b {
