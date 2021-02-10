@@ -1,4 +1,5 @@
 import React from "react"
+import Cards from "../components/about/cards/cards"
 import Header from "../components/Header/header"
 
 function About() {
@@ -13,6 +14,7 @@ function About() {
         }}
         title={title}
       />
+      <Cards />
     </>
   )
 }

@@ -102,8 +102,9 @@
   }
 
   .b {
-    top: 133px;
-    left: 0;
+    top: unset;
+    left: calc(0px - var(--paddingLeftRigth) / 2);
+    bottom: 31.5px;
   }
   .c {
     top: 75px;
@@ -111,7 +112,8 @@
   }
   .d {
     top: -7.5px;
-    right: 0;
+    right: unset;
+    left: calc(0px - var(--paddingLeftRigth));
   }
   .e {
     top: -7.5px;
@@ -141,16 +143,18 @@
     right: -165px;
   }
   .b {
-    top: 133px;
-    left: 0;
+    top: unset;
+    left: unset;
+    right: calc(0px - var(--paddingLeftRigth));
+    bottom: 30.5px;
   }
   .c {
     top: 75px;
     left: 250px;
   }
   .d {
-    top: -7.5px;
-    right: 0;
+    right: unset;
+    left: -260px;
   }
   .e {
     top: -7.5px;
