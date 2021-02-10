@@ -1,0 +1,17 @@
+{
+    "title": "How it works",
+    "askRsp": [
+        {
+            "ask": "How do I download the app?",
+            "response": "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+        },
+        {
+            "ask": "Can I find a nearby Scoots?",
+            "response": "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+        },
+        {
+            "ask": "Do I need a license to ride?",
+            "response": "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+        }
+    ]
+}

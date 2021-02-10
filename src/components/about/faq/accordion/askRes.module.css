@@ -1,0 +1,37 @@
+.askResponse {
+  transition: padding-bottom 0.3s;
+  padding: 32px 28px 32px 32px;
+  background: var(--Snow);
+}
+
+.askResponse:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.askWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: margin-bottom 0.3s;
+  /* margin-bottom: 12px; */
+}
+
+.askBtn {
+  transition: transform 0.3s;
+}
+
+.ask {
+  font-family: "Space Mono";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.803571px;
+  color: var(--Dark-Navy);
+}
+
+.response {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--Dark-Navy);
+  overflow: hidden;
+}

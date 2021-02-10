@@ -1,5 +1,6 @@
 import React from "react"
 import Cards from "../components/about/cards/cards"
+import Faq from "../components/about/faq/faq"
 import InfosBox from "../components/about/infoBox/infoBox"
 import Header from "../components/Header/header"
 
@@ -17,6 +18,7 @@ function About() {
       />
       <Cards />
       <InfosBox />
+      <Faq />
     </>
   )
 }

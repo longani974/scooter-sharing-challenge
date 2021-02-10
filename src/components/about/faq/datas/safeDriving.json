@@ -1,0 +1,17 @@
+{
+    "title": "Safe driving",
+    "askRsp": [
+        {
+            "ask": "Should I wear a helmet??",
+            "response": "Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting."
+        },
+        {
+            "ask": "Can I find a nearby Scoots?",
+            "response": "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+        },
+        {
+            "ask": "Do I need a license to ride?",
+            "response": "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+        }
+    ]
+}
