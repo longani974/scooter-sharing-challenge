@@ -34,4 +34,5 @@
   line-height: 25px;
   color: var(--Dark-Navy);
   overflow: hidden;
+  transition: height 0.3s;
 }
