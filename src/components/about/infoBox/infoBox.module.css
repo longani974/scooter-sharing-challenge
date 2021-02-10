@@ -1,0 +1,49 @@
+.infoBox {
+  padding: 0 var(--paddingLeftRigth);
+  margin-top: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.line {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .infoBox {
+    position: relative;
+    margin-top: 122px;
+    align-items: unset;
+  }
+
+  .line {
+    position: absolute;
+    display: block;
+    border: 7.5px solid var(--Light-Grey);
+    height: 512px;
+    top: -122px;
+    left: calc(var(--paddingLeftRigth) + 41px);
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .infoBox {
+    padding: 0 0 0 var(--paddingLeftRigth);
+    margin-top: 160px;
+    flex-direction: row;
+    gap: 50px;
+    align-items: unset;
+  }
+
+  .line {
+    border: 7.5px solid var(--Light-Grey);
+    height: 0;
+    width: 974px;
+    top: 41.5px;
+    left: 0;
+  }
+}
