@@ -18,8 +18,8 @@ const InfosBox = () => {
   }
   return (
     <div className={styles.infoBox}>
-      <div className={styles.line}></div>
-      {infos.map(info => info)}
+      <h2>Our values</h2>
+      <div className={styles.infoCards}>{infos.map(info => info)}</div>
     </div>
   )
 }

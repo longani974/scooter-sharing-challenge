@@ -1,49 +1,42 @@
 .infoBox {
   padding: 0 var(--paddingLeftRigth);
   margin-top: 120px;
+}
 
+.infoCards {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
 }
 
-.line {
-  display: none;
+.infoBox h2 {
+  text-align: center;
+  margin: 32px 0 27px;
 }
 
 @media screen and (min-width: 768px) {
   .infoBox {
+    padding: 0 156px;
     position: relative;
-    margin-top: 122px;
+    margin-top: 120px;
     align-items: unset;
   }
 
-  .line {
-    position: absolute;
-    display: block;
-    border: 7.5px solid var(--Light-Grey);
-    height: 512px;
-    top: -122px;
-    left: calc(var(--paddingLeftRigth) + 41px);
-    z-index: -1;
+  .infoBox h2 {
+    margin: 64px 0 27px;
   }
 }
 
 @media screen and (min-width: 1365px) {
   .infoBox {
-    padding: 0 0 0 var(--paddingLeftRigth);
+    padding: 0 var(--paddingLeftRigth);
     margin-top: 160px;
-    flex-direction: row;
     gap: 50px;
     align-items: unset;
   }
 
-  .line {
-    border: 7.5px solid var(--Light-Grey);
-    height: 0;
-    width: 974px;
-    top: 41.5px;
-    left: 0;
+  .infoCards {
+    flex-direction: row;
   }
 }

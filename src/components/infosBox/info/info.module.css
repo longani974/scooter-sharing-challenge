@@ -44,7 +44,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .info {
+  .flex {
     display: flex;
     text-align: left;
     gap: 79px;

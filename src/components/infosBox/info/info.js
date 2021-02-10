@@ -18,8 +18,10 @@ const Info = props => {
   )
 
   const logo = props.nbContent ? `0${props.nbContent}` : image
+
+  const flex = props.logo ? styles.flex : null
   return (
-    <div className={styles.info}>
+    <div className={styles.info + " " + flex}>
       {imgHero}
       <div className={styles.logo}>{logo}</div>
       <div>
