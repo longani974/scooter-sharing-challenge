@@ -6,8 +6,11 @@ import * as styles from "./member.module.css"
 const Member = props => {
   return (
     <div className={styles.member}>
-      <h4>{props.job}</h4>
-      <p>{props.location}</p>
+      <div>
+        <h4>{props.job}</h4>
+        <p>{props.location}</p>
+      </div>
+
       <Button large>Apply</Button>
     </div>
   )

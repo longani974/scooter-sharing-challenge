@@ -5,3 +5,17 @@
   margin-top: 145px;
   padding: 0 var(--paddingLeftRigth);
 }
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    margin-top: 120px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .team {
+    padding: 0 var(--paddingLeftRigth);
+  }
+}
