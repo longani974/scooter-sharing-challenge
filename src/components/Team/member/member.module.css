@@ -1,0 +1,20 @@
+.member {
+  text-align: center;
+  background: var(--Snow);
+  padding: 36px 32px 32px;
+}
+
+.member h4 {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.803571px;
+  color: var(--Dark-Navy);
+}
+
+.member p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--Dark-Navy);
+  margin: 4px 0 16px;
+}

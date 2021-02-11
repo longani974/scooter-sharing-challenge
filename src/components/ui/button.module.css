@@ -1,7 +1,7 @@
 .btn {
   background-color: var(--Yellow);
   color: var(--White);
-  width: 180px;
+  width: var(--btnWidth);
   height: 53px;
   font-family: Space Mono;
   font-size: 15px;
@@ -16,4 +16,10 @@
   color: var(--Yellow);
   background-color: var(--White);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 180px;
+  }
 }

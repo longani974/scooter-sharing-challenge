@@ -3,7 +3,7 @@ import Info from "../../infosBox/info/info"
 import data from "./info.json"
 import * as styles from "./infoBox.module.css"
 
-const InfosBox = () => {
+const InfosBox = props => {
   const infos = []
   for (let i = 0; i < data.length; i++) {
     infos.push(
@@ -18,7 +18,7 @@ const InfosBox = () => {
   }
   return (
     <div className={styles.infoBox}>
-      <h2>Our values</h2>
+      <h2>{props.title}</h2>
       <div className={styles.infoCards}>{infos.map(info => info)}</div>
     </div>
   )

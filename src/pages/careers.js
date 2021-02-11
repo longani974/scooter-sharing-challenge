@@ -1,5 +1,8 @@
 import React from "react"
+import InfosBox from "../components/about/infoBox/infoBox"
+import Cards from "../components/careers/cards/cards"
 import Header from "../components/Header/header"
+import Team from "../components/Team/team"
 
 function Careers() {
   const title = "Careers"
@@ -13,6 +16,9 @@ function Careers() {
         }}
         title={title}
       />
+      <Cards />
+      <InfosBox title="Why join us?" />
+      <Team />
     </>
   )
 }

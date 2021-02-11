@@ -17,7 +17,7 @@ function About() {
         title={title}
       />
       <Cards />
-      <InfosBox />
+      <InfosBox title="Our values" />
       <Faq />
     </>
   )
