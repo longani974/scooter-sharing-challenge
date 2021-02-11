@@ -12,9 +12,6 @@ const Askres = props => {
   const [rotateArrow, setRotateArrow] = useState({
     transform: "rotate(0deg)",
   })
-  const [spacingBottom, setSpacingBottom] = useState({
-    paddingBottom: "0px",
-  })
   const [spacingBetween, setSpacingBetween] = useState({
     marginBottom: "0px",
   })
@@ -26,12 +23,10 @@ const Askres = props => {
     if (isClicked) {
       setResStyle({ height: inner.current.scrollHeight + "px" })
       setRotateArrow({ transform: "rotate(180deg)" })
-      setSpacingBottom({ paddingBottom: "16px" })
       setSpacingBetween({ marginBottom: "12px" })
     } else {
       setResStyle({ height: "0" })
       setRotateArrow({ transform: "rotate(0deg)" })
-      setSpacingBottom({ paddingBottom: "18px" })
       setSpacingBetween({ marginBottom: "0px" })
     }
   }, [isClicked])
@@ -39,17 +34,23 @@ const Askres = props => {
   const clickHandler = () => {
     setIsClicked(prevState => !prevState)
   }
-  console.log(props.ask, props.response)
 
   return (
     <div
       className={styles.askResponse}
-      style={spacingBottom}
       onClick={clickHandler}
+      aria-hidden="true"
     >
       <div className={styles.askWrapper} style={spacingBetween}>
         <div className={styles.ask}>{props.ask}</div>
-        <div className={styles.askBtn} style={rotateArrow}>
+        <div
+          className={styles.askBtn}
+          style={rotateArrow}
+          // onClick={clickHandler}
+          // onKeyDown={clickHandler}
+          // role="main"
+          // tabIndex="0"
+        >
           <img src={arrowDown} alt="^" />
         </div>
       </div>

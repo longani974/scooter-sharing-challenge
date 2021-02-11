@@ -36,3 +36,12 @@
   overflow: hidden;
   transition: height 0.3s;
 }
+
+@media screen and (min-width: 768px) {
+  .ask {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: var(--Dark-Navy);
+  }
+}

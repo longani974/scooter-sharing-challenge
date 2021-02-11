@@ -11,7 +11,7 @@ const Faq = () => {
     <div className={styles.faq}>
       <h2>FAQs</h2>
       <Accordion data={howItWork} />
-      <div style={{ height: "24px" }}></div>
+      <div className={styles.space}></div>
       <Accordion data={safeDriving} />
     </div>
   )

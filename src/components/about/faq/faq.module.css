@@ -10,3 +10,32 @@
   letter-spacing: -1.07143px;
   margin-bottom: 48px;
 }
+
+.space {
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .faq {
+    padding: 0 40px;
+    margin-top: 145px;
+  }
+
+  .faq h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    margin-bottom: 64px;
+  }
+
+  .space {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .faq {
+    padding: 0 var(--paddingLeftRigth);
+    margin-top: 120px;
+  }
+}

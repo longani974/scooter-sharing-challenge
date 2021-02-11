@@ -5,3 +5,22 @@
   letter-spacing: -1.07143px;
   margin-bottom: 32px;
 }
+
+@media screen and (min-width: 768px) {
+  .accordion h3 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    max-width: 730px;
+  }
+}

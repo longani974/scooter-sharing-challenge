@@ -5,7 +5,6 @@ import * as styles from "./accordon.module.css"
 
 const Accordion = props => {
   const data = props.data.askRsp
-  console.log(data)
   const content = []
   for (let i = 0; i < data.length; i++) {
     content.push(
@@ -19,7 +18,7 @@ const Accordion = props => {
   return (
     <div className={styles.accordion}>
       <h3>{props.data.title}</h3>
-      {content.map(data => data)}
+      <div className={styles.wrapper}>{content.map(data => data)}</div>
     </div>
   )
 }
