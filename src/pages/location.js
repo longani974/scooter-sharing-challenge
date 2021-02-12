@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/Header/header"
+import Content from "../components/location/content"
 
 function Location() {
   const title = "Location"
@@ -13,6 +14,7 @@ function Location() {
         }}
         title={title}
       />
+      <Content />
     </>
   )
 }

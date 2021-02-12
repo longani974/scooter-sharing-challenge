@@ -22,7 +22,7 @@ export default function Home() {
         imgSrc={{
           mobile: "images/home-hero-mobile.jpg",
           tablet: "images/home-hero-tablet.jpg",
-          dasktop: "images/home-hero-desktop.jpg",
+          desktop: "images/home-hero-desktop.jpg",
         }}
         isWithContent
         title={title}

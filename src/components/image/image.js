@@ -53,7 +53,7 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   let sourceArr = []
   const source = () => {
     const arrSource = []
-    const medias = customMedias ? customMedias : [0, 400, 769]
+    const medias = customMedias ? customMedias : [0, 376, 769]
     const unitMedia = unit ? unit : "px"
     if (customMedias && customMedias.length !== srcArr.length)
       console.error(
@@ -65,10 +65,18 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
           isSvg = true
           arrSource.push(<img src={srcArr[i][0].publicURL} {...rest} alt="" />)
         } else {
-          arrSource.push({
-            ...srcArr[i][0].childImageSharp.fluid,
-            media: `(min-width: ${medias[i]}${unitMedia})`,
-          })
+          console.log(medias[i])
+          if (i === 0) {
+            arrSource.push({
+              ...srcArr[i][0].childImageSharp.fluid,
+              // We are not pushing the media here as this causes a bug where the images do not change when resizing: https://github.com/gatsbyjs/gatsby/issues/16888 kimbaudi solution
+            })
+          } else {
+            arrSource.push({
+              ...srcArr[i][0].childImageSharp.fluid,
+              media: `(min-width: ${medias[i]}${unitMedia})`, // We start push media on the second image
+            })
+          }
         }
       }
     }
@@ -88,7 +96,7 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   } else if (sourceArr[0]) {
     imageToDisplay = sourceArr[0]
   }
-
+  console.log(imageToDisplay)
   return imageToDisplay
 }
 
