@@ -1,3 +1,79 @@
 .location {
   padding: 0 var(--paddingLeftRigth);
+  margin-top: 72px;
+}
+
+.towns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin: 40px 0 72px;
+}
+
+.towns span {
+  width: 100%;
+  padding: 22px 0;
+  background: var(--Light-Yellow);
+  font-family: "Space Mono";
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--Dark-Navy);
+}
+
+.card {
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.42857px;
+  color: var(--Dark-Navy);
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--Dim-Grey);
+  margin: 32px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .towns {
+    display: none;
+  }
+
+  .card {
+    margin-top: 64px;
+  }
+
+  .card h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+  }
+
+  .card p {
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .card {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .card h2 {
+    max-width: 351px;
+  }
+
+  .card p {
+    margin: 0 0 0 30px;
+    max-width: 445px;
+  }
 }

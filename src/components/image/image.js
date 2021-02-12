@@ -65,7 +65,6 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
           isSvg = true
           arrSource.push(<img src={srcArr[i][0].publicURL} {...rest} alt="" />)
         } else {
-          console.log(medias[i])
           if (i === 0) {
             arrSource.push({
               ...srcArr[i][0].childImageSharp.fluid,
@@ -96,7 +95,6 @@ const Image = ({ isBgImage, children, src, customMedias, unit, ...rest }) => {
   } else if (sourceArr[0]) {
     imageToDisplay = sourceArr[0]
   }
-  console.log(imageToDisplay)
   return imageToDisplay
 }
 
