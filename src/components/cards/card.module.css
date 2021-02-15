@@ -69,6 +69,19 @@
   display: none;
 }
 
+@media screen and (min-width: 485px) {
+  .d {
+    right: unset;
+    left: calc(0px - var(--paddingLeftRigth));
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .c {
+    left: 220px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card h2 {
     font-size: 48px;
@@ -103,7 +116,8 @@
 
   .b {
     top: unset;
-    left: calc(0px - var(--paddingLeftRigth) / 2);
+    left: unset;
+    right: calc(0px - var(--paddingLeftRigth));
     bottom: 31.5px;
   }
   .c {
@@ -121,6 +135,31 @@
   }
   .f {
     top: 180.5px;
+  }
+}
+
+@media screen and (min-width: 835px) {
+  .f {
+    right: calc(0px - var(--paddingLeftRigth));
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .a {
+    right: calc(0px - var(--paddingLeftRigth));
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .e {
+    left: calc(0px - calc(var(--paddingLeftRigth)));
+  }
+}
+
+@media screen and (min-width: 1145px) {
+  .c {
+    left: unset;
+    right: calc(0px - var(--paddingLeftRigth));
   }
 }
 
