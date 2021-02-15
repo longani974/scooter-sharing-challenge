@@ -4,7 +4,7 @@ import * as styles from "./signUp.module.css"
 
 const SignUp = () => {
   return (
-    <div className={styles.signUp}>
+    <div className={styles.signUp} id="signUp">
       <h2>Sign up and Scoot off today</h2>
       <div className={styles.store}>
         <a href="https://www.apple.com/">

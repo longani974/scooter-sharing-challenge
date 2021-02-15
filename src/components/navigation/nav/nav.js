@@ -19,7 +19,7 @@ const Nav = props => {
     >
       <div className={styles.navWrapper}>
         <NavLink></NavLink>
-        <Button to={"#"}>Get Scootin</Button>
+        <Button to={"#signUp"}>Get Scootin</Button>
       </div>
     </div>
   )

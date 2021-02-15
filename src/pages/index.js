@@ -13,7 +13,7 @@ export default function Home() {
         convenient locations in each of our cities. Use our app to locate the
         nearest bike, unlock it with a tap, and you’re away!
       </p>
-      <Button>Get Scooting</Button>
+      <Button to="#signUp">Get Scooting</Button>
     </>
   )
   return (

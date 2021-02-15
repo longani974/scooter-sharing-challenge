@@ -45,7 +45,11 @@ const Card = props => {
 
   const rowSide = !props.reverse ? "row" : "row-reverse"
 
-  const btn = props.btnTxt ? <Button>{props.btnTxt}</Button> : <></>
+  const btn = props.btnTxt ? (
+    <Button to={props.to}>{props.btnTxt}</Button>
+  ) : (
+    <></>
+  )
   return (
     <div style={{ "--rowSide": `${rowSide}` }} className={styles.card}>
       <div className={bgCircle}></div>
