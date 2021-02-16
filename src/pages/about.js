@@ -11,7 +11,7 @@ function About() {
     <>
       <Helmet>
         <html lang="en" />
-        <title>My homepage</title>
+        <title>About us</title>
         <meta name="description" content="Here you will learn more about us" />
       </Helmet>
       <Header

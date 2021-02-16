@@ -15,7 +15,7 @@ const Cards = () => {
         btnTxt={data[i].btnTxt}
         reverse={rev}
         arrow={data[i].arrow}
-        to={data[i].to}
+        isNotLink
         key={Math.random()}
       />
     )

@@ -3,6 +3,7 @@ import HeaderHome from "../components/Header/header"
 import Cards from "../components/index/cards/cards"
 import InfosBox from "../components/infosBox/infosBox"
 import Button from "../components/ui/button"
+import { Helmet } from "react-helmet"
 
 export default function Home() {
   const title = "Scooter sharing made simple"
@@ -18,6 +19,11 @@ export default function Home() {
   )
   return (
     <>
+      <Helmet>
+        <html lang="en" />
+        <title>Scoot - scooter sharing</title>
+        <meta name="description" content="We have bikes for rent." />
+      </Helmet>
       <HeaderHome
         imgSrc={{
           mobile: "images/home-hero-mobile.jpg",
