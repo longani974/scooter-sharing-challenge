@@ -9,6 +9,7 @@ module.exports = {
     title: `Scoot`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
